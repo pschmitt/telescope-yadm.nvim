@@ -1,4 +1,4 @@
-# telescope-yadm
+# telescope-yadm.nvim
 
 Extension for [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) 
 that provides `yadm_files` that essentially does the same as the builtin 
