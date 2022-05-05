@@ -22,7 +22,7 @@ M.yadm_files = function(opts)
   end
 
   pickers.new(opts, {
-    prompt_title = "yadm ls-files",
+    prompt_title = "YADM Files",
     finder = finders.new_oneshot_job(
       vim.tbl_flatten { yadm_command, },
       opts
