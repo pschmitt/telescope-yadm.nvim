@@ -7,7 +7,7 @@ end
 
 return telescope.register_extension {
   exports = {
-    yadm = main.yadm_files,
+    yadm_files = main.yadm_files,
     -- FIXME The below exports don't seem to have any effect
     -- yadm_files = main.yadm_files,
     -- git_or_yadm_files = main.git_or_yadm_files
