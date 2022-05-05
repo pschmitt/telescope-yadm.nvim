@@ -4,10 +4,6 @@ local conf = require("telescope.config").values
 local finders = require "telescope.finders"
 local pickers = require "telescope.pickers"
 
-M.setup = function(config)
-  print("Setup called.")
-end
-
 -- our picker function: yadm_files
 M.yadm_files = function(opts)
   opts = opts or {}
