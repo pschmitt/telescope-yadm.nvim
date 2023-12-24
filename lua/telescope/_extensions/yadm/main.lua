@@ -46,4 +46,13 @@ M.git_or_yadm_files = function(opts)
   end
 end
 
+M.git_or_files = function(opts)
+  local show_untracked = vim.F.if_nil(opts.show_untracked, true)
+  local ok = pcall(builtin.git_files, { show_untracked = show_untracked })
+
+  if not ok then
+    builtin.find_files()
+  end
+end
+
 return M
